@@ -1,0 +1,39 @@
+/* Pagination container */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+/* Individual pagination item */
+.pagination li {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+/* Active pagination item */
+.pagination li.active {
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Previous and Next buttons */
+.pagination .previous,
+.pagination .next {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    cursor: pointer;
+}
+
+/* Disabled Previous and Next buttons */
+.pagination .disabled {
+    background-color: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+}

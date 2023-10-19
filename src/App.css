@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.pagination li {
+    display: inline-block;
+    padding-left: 0;
+    color:white; 
+}
+a{
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style the table headers */
+th {
+    background-color: #161C32;
+    color: white;
+    padding: 10px;
+    text-align: left;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Style the table rows */
+tr:nth-child(even) {
+    /* background-color: #161C32; */
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+tr:nth-child(odd){
+    /* background-color: #161C32; */
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+tr:hover {
+    background-color: #161C32
+}
+li:hover{
+    background-color: #e88a34;
+}
+/* Style the table cells */
+td,
+th {
+    padding: 50px;
+    border-bottom: 1px solid #5a5959;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Make the table container responsive */
+.table-container {
+    overflow-x: auto;
+}
+td,
+th {
+    padding: 10px;
+}
+
+/* Define breakpoints for responsiveness */
+@media (max-width: 600px) {
+
+    th,
+    td {
+        padding: 5px;
+        font-size: 12px;
+    }
+}
+
+/* Make the table background transparent */
+.responsive-table1 {
+    background-color: transparent;
 }
